@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name MAX5026footprint)(type KiCad)(uri C:/Users/evase/Documents/Eva/MAX5026footprint)(options "")(descr ""))
+  (lib (name LM7705footprint)(type KiCad)(uri "C:/Users/evase/Documents/Eva/KiCad/knjižnice in footprinti/LM7705footprint")(options "")(descr ""))
+)
