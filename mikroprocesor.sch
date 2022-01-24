@@ -771,4 +771,9 @@ Wire Wire Line
 	7250 2250 7400 2250
 Text GLabel 7150 2200 0    50   Input ~ 0
 NTC_SCLK
+Wire Wire Line
+	8500 2450 8500 2350
+Connection ~ 8500 2350
+Text GLabel 8500 2450 3    50   Input ~ 0
+NTC
 $EndSCHEMATC
