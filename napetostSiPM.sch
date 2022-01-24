@@ -110,9 +110,9 @@ Wire Wire Line
 	8800 2550 8250 2550
 Wire Wire Line
 	8800 2650 8250 2650
-Text GLabel 8800 2750 2    50   Input ~ 0
+Text GLabel 8800 2550 2    50   Input ~ 0
 SCL
-Text GLabel 8800 2850 2    50   Input ~ 0
+Text GLabel 8800 2650 2    50   Input ~ 0
 SDA
 Wire Wire Line
 	8550 2250 8250 2250
@@ -198,40 +198,18 @@ SWDIO
 Text GLabel 9050 4700 2    50   Input ~ 0
 SWO
 $Comp
-L Connector:Conn_01x14_Male J1
-U 1 1 61F59C6C
+L Connector:Conn_01x13_Male J1
+U 1 1 61EE8518
 P 8050 2150
 F 0 "J1" H 8156 2928 50  0000 C CNN
-F 1 "Conn_01x14_Male" H 8156 2837 50  0000 C CNN
+F 1 "Conn_01x13_Male" H 8156 2837 50  0000 C CNN
 F 2 "" H 8050 2150 50  0001 C CNN
 F 3 "~" H 8050 2150 50  0001 C CNN
 	1    8050 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8250 2750 8800 2750
-Wire Wire Line
-	8250 2850 8800 2850
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 61F5A467
-P 8800 2550
-F 0 "#PWR0101" H 8800 2400 50  0001 C CNN
-F 1 "+3.3V" V 8815 2678 50  0000 L CNN
-F 2 "" H 8800 2550 50  0001 C CNN
-F 3 "" H 8800 2550 50  0001 C CNN
-	1    8800 2550
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 61F5A61E
-P 8800 2650
-F 0 "#PWR0102" H 8800 2400 50  0001 C CNN
-F 1 "GND" V 8805 2522 50  0000 R CNN
-F 2 "" H 8800 2650 50  0001 C CNN
-F 3 "" H 8800 2650 50  0001 C CNN
-	1    8800 2650
-	0    -1   -1   0   
-$EndComp
+	8600 2750 8250 2750
+Text GLabel 8600 2750 2    50   Input ~ 0
+NTC
 $EndSCHEMATC

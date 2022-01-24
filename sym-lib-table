@@ -1,4 +1,4 @@
 (sym_lib_table
   (lib (name Amplifier_Difference)(type Legacy)(uri ${KIPRJMOD}/Amplifier_Difference.lib)(options "")(descr ""))
-  (lib (name Amplifier_Difference2)(type Legacy)(uri ${KIPRJMOD}/Amplifier_Difference2.lib)(options "")(descr ""))
+  (lib (name Amplifier_Difference2)(type Legacy)(uri "C:/Users/evase/Documents/Eva/KiCad/knjižnice in footprinti/MAX6682/Amplifier_Difference2.lib")(options "")(descr ""))
 )
