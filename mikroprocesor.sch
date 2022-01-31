@@ -418,7 +418,6 @@ Wire Wire Line
 	3700 2450 3700 2600
 Connection ~ 3700 2600
 NoConn ~ 4000 3700
-NoConn ~ 4000 3900
 NoConn ~ 4000 4000
 NoConn ~ 4000 4400
 NoConn ~ 4000 4500
@@ -603,8 +602,6 @@ F 3 "" H 2400 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2400 4700 2300 4700
-Text GLabel 1850 4700 0    50   Input ~ 0
-ANALOG
 Text GLabel 700  5050 0    50   Input ~ 0
 SCL
 Wire Wire Line
@@ -643,8 +640,6 @@ Wire Wire Line
 Wire Wire Line
 	4800 4300 4350 4300
 Connection ~ 4350 4300
-Text GLabel 4800 4300 2    50   Input ~ 0
-DIGITAL
 Text GLabel 4300 4000 2    50   Input ~ 0
 DAC
 Wire Wire Line
@@ -776,4 +771,12 @@ Wire Wire Line
 Connection ~ 8500 2350
 Text GLabel 8500 2450 3    50   Input ~ 0
 NTC
+Wire Wire Line
+	4650 3900 4000 3900
+Text GLabel 4650 3900 2    50   Input ~ 0
+TOK_BRANJE
+Text GLabel 4800 4300 2    50   Input ~ 0
+DIGITAL_T
+Text GLabel 1850 4700 0    50   Input ~ 0
+ANALOG_T
 $EndSCHEMATC

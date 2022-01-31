@@ -197,19 +197,32 @@ Text GLabel 9050 4600 2    50   Input ~ 0
 SWDIO
 Text GLabel 9050 4700 2    50   Input ~ 0
 SWO
+Wire Wire Line
+	8600 2750 8250 2750
+Text GLabel 8600 2750 2    50   Input ~ 0
+NTC
 $Comp
-L Connector:Conn_01x13_Male J1
-U 1 1 61EE8518
+L Connector:Conn_01x14_Male J1
+U 1 1 61EFBF3D
 P 8050 2150
 F 0 "J1" H 8156 2928 50  0000 C CNN
-F 1 "Conn_01x13_Male" H 8156 2837 50  0000 C CNN
+F 1 "Conn_01x14_Male" H 8156 2837 50  0000 C CNN
 F 2 "" H 8050 2150 50  0001 C CNN
 F 3 "~" H 8050 2150 50  0001 C CNN
 	1    8050 2150
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 2750 8250 2750
-Text GLabel 8600 2750 2    50   Input ~ 0
-NTC
+	8400 2850 8250 2850
+$Comp
+L power:GND #PWR0103
+U 1 1 61EFC12A
+P 8400 2850
+F 0 "#PWR0103" H 8400 2600 50  0001 C CNN
+F 1 "GND" V 8405 2722 50  0000 R CNN
+F 2 "" H 8400 2850 50  0001 C CNN
+F 3 "" H 8400 2850 50  0001 C CNN
+	1    8400 2850
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

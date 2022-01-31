@@ -716,8 +716,6 @@ GNDboljse
 Wire Wire Line
 	7100 5200 6850 5200
 Connection ~ 6850 5200
-Text GLabel 7100 5200 2    50   Input ~ 0
-BRANJE
 Text GLabel 3300 5750 3    50   Input ~ 0
 GNDboljse
 Text GLabel 4550 5700 3    50   Input ~ 0
@@ -726,4 +724,6 @@ Text GLabel 5650 1450 2    50   Input ~ 0
 MAX32V
 Text GLabel 3500 4800 2    50   Input ~ 0
 MAX32V
+Text GLabel 7100 5200 2    50   Input ~ 0
+TOK_BRANJE
 $EndSCHEMATC
