@@ -3,4 +3,7 @@
   (lib (name LM7705footprint)(type KiCad)(uri "C:/Users/evase/Documents/Eva/KiCad/knjižnice in footprinti/LM7705footprint")(options "")(descr ""))
   (lib (name TLV1117footprint)(type KiCad)(uri "C:/Users/evase/Documents/Eva/KiCad/knjižnice in footprinti/TLV1117footprint")(options "")(descr ""))
   (lib (name MAX6682footprint)(type KiCad)(uri "C:/Users/evase/Documents/Eva/KiCad/knjižnice in footprinti/MAX6682footprint")(options "")(descr ""))
+  (lib (name diodafootprint)(type KiCad)(uri "C:/Users/evase/Documents/Eva/KiCad/knjižnice in footprinti/diodafootprint")(options "")(descr ""))
+  (lib (name OPA196xDBVfootprint)(type KiCad)(uri "C:/Users/evase/Documents/Eva/KiCad/knjižnice in footprinti/OPA196xDBVfootprint")(options "")(descr ""))
+  (lib (name A915BY-470Mfootprint)(type KiCad)(uri "C:/Users/evase/Documents/Eva/KiCad/knjižnice in footprinti/A915BY-470Mfootprint")(options "")(descr ""))
 )

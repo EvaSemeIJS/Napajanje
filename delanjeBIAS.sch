@@ -48,7 +48,7 @@ AR Path="/61F2196D" Ref="L?"  Part="1"
 AR Path="/61F20E3B/61F2196D" Ref="L2"  Part="1" 
 F 0 "L2" V 2653 1496 50  0000 L CNN
 F 1 "L" V 2653 1405 50  0000 L CNN
-F 2 "" H 2600 1450 50  0001 C CNN
+F 2 "A915BY-470Mfootprint:IND_#A915BY-470M=P3" H 2600 1450 50  0001 C CNN
 F 3 "~" H 2600 1450 50  0001 C CNN
 	1    2600 1450
 	0    1    1    0   
@@ -61,7 +61,7 @@ AR Path="/61F21974" Ref="D?"  Part="1"
 AR Path="/61F20E3B/61F21974" Ref="D1"  Part="1" 
 F 0 "D1" H 3550 1234 50  0000 C CNN
 F 1 "D_Schottky" H 3550 1325 50  0000 C CNN
-F 2 "" H 3550 1450 50  0001 C CNN
+F 2 "diodafootprint:SOT91P240X105-3N" H 3550 1450 50  0001 C CNN
 F 3 "~" H 3550 1450 50  0001 C CNN
 	1    3550 1450
 	-1   0    0    1   
@@ -267,10 +267,6 @@ F 3 "~" H 3250 4550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3400 4550 3750 4550
-Wire Wire Line
-	3900 4550 3900 5150
-Wire Wire Line
-	3900 5150 3700 5150
 $Comp
 L Device:C C?
 U 1 1 61F2A996
@@ -290,27 +286,12 @@ Wire Wire Line
 	3750 4050 3750 4550
 Connection ~ 3750 4550
 Wire Wire Line
-	3750 4550 3900 4550
-Wire Wire Line
 	3100 4050 3000 4050
 Wire Wire Line
 	3000 4050 3000 4550
 Connection ~ 3000 4550
 Wire Wire Line
 	3000 4550 3100 4550
-$Comp
-L Amplifier_Current:INA168 U?
-U 1 1 61F2A9A5
-P 5100 5100
-AR Path="/61F2A9A5" Ref="U?"  Part="1" 
-AR Path="/61F20E3B/61F2A9A5" Ref="U5"  Part="1" 
-F 0 "U5" H 5441 5146 50  0000 L CNN
-F 1 "INA168" H 5441 5055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5100 5100 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ina138.pdf" H 5100 5105 50  0001 C CNN
-	1    5100 5100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:R R?
 U 1 1 61F2A9AC
@@ -334,14 +315,6 @@ Wire Wire Line
 	4550 5250 4800 5250
 Wire Wire Line
 	4800 5250 4800 5200
-Wire Wire Line
-	3900 5150 4100 5150
-Wire Wire Line
-	4100 5150 4100 4850
-Wire Wire Line
-	4100 4850 4550 4850
-Connection ~ 3900 5150
-Connection ~ 4550 4850
 $Comp
 L Device:R R?
 U 1 1 61F2A9BD
@@ -357,19 +330,6 @@ F 3 "~" H 5600 5250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5400 5100 5600 5100
-$Comp
-L Amplifier_Operational:AD8001AN U?
-U 1 1 61F2A9C5
-P 6250 5200
-AR Path="/61F2A9C5" Ref="U?"  Part="1" 
-AR Path="/61F20E3B/61F2A9C5" Ref="U6"  Part="1" 
-F 0 "U6" H 6591 5246 50  0000 L CNN
-F 1 "AD8001AN" H 6591 5155 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 6150 5000 50  0001 L CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8001.pdf" H 6400 5350 50  0001 C CNN
-	1    6250 5200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5600 5100 5950 5100
 Connection ~ 5600 5100
@@ -395,14 +355,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61F2A9D7
-P 5000 5650
+P 5200 5500
 AR Path="/61F2A9D7" Ref="#PWR?"  Part="1" 
 AR Path="/61F20E3B/61F2A9D7" Ref="#PWR032"  Part="1" 
-F 0 "#PWR032" H 5000 5400 50  0001 C CNN
-F 1 "GND" H 5005 5477 50  0000 C CNN
-F 2 "" H 5000 5650 50  0001 C CNN
-F 3 "" H 5000 5650 50  0001 C CNN
-	1    5000 5650
+F 0 "#PWR032" H 5200 5250 50  0001 C CNN
+F 1 "GND" H 5205 5327 50  0000 C CNN
+F 2 "" H 5200 5500 50  0001 C CNN
+F 3 "" H 5200 5500 50  0001 C CNN
+	1    5200 5500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -421,14 +381,14 @@ $EndComp
 $Comp
 L power:+5V #PWR?
 U 1 1 61F2A9E3
-P 5000 4650
+P 5200 4700
 AR Path="/61F2A9E3" Ref="#PWR?"  Part="1" 
 AR Path="/61F20E3B/61F2A9E3" Ref="#PWR031"  Part="1" 
-F 0 "#PWR031" H 5000 4500 50  0001 C CNN
-F 1 "+5V" H 5015 4823 50  0000 C CNN
-F 2 "" H 5000 4650 50  0001 C CNN
-F 3 "" H 5000 4650 50  0001 C CNN
-	1    5000 4650
+F 0 "#PWR031" H 5200 4550 50  0001 C CNN
+F 1 "+5V" H 5215 4873 50  0000 C CNN
+F 2 "" H 5200 4700 50  0001 C CNN
+F 3 "" H 5200 4700 50  0001 C CNN
+	1    5200 4700
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -549,21 +509,6 @@ F 3 "" H 9550 4450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9550 4100 9550 3950
-$Comp
-L Amplifier_Operational:AD8001AN U?
-U 1 1 61F2AA23
-P 3400 5100
-AR Path="/61F2AA23" Ref="U?"  Part="1" 
-AR Path="/61F20E3B/61F2AA23" Ref="U4"  Part="1" 
-F 0 "U4" H 3741 5146 50  0000 L CNN
-F 1 "AD8001AN" H 3741 5055 50  0000 L CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 3300 4900 50  0001 L CNN
-F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ad8001.pdf" H 3550 5250 50  0001 C CNN
-	1    3400 5100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3700 5100 3700 5150
 Wire Wire Line
 	2700 4550 2800 4550
 Wire Wire Line
@@ -574,14 +519,10 @@ Connection ~ 2800 4550
 Wire Wire Line
 	2800 4550 3000 4550
 Wire Wire Line
-	3300 5400 3300 5600
-Wire Wire Line
 	9550 3950 10000 3950
 Wire Wire Line
 	10000 3950 10000 4300
 Connection ~ 10000 4300
-Wire Wire Line
-	3300 4800 3500 4800
 $Comp
 L Device:C C?
 U 1 1 61F2AA35
@@ -597,14 +538,10 @@ F 3 "~" H 2950 5450 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2950 5600 3300 5600
-Connection ~ 3300 5600
 Wire Wire Line
 	3300 5600 3300 5750
 Wire Wire Line
 	2950 5300 2950 4800
-Wire Wire Line
-	2950 4800 3300 4800
-Connection ~ 3300 4800
 $Comp
 L Device:C C?
 U 1 1 61F2AA42
@@ -619,21 +556,7 @@ F 3 "~" H 5350 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5000 5400 5000 5500
-Wire Wire Line
-	5000 5500 5350 5500
-Connection ~ 5000 5500
-Wire Wire Line
-	5000 5500 5000 5650
-Wire Wire Line
-	5000 4650 5000 4700
-Wire Wire Line
-	5000 4700 5350 4700
-Wire Wire Line
 	5350 4700 5350 5200
-Connection ~ 5000 4700
-Wire Wire Line
-	5000 4700 5000 4800
 Wire Wire Line
 	6150 4800 6150 4850
 $Comp
@@ -722,8 +645,79 @@ Text GLabel 4550 5700 3    50   Input ~ 0
 BIAS
 Text GLabel 5650 1450 2    50   Input ~ 0
 MAX32V
-Text GLabel 3500 4800 2    50   Input ~ 0
+Text GLabel 3500 4700 2    50   Input ~ 0
 MAX32V
 Text GLabel 7100 5200 2    50   Input ~ 0
 TOK_BRANJE
+$Comp
+L Amplifier_Operational:OPA340UA U6
+U 1 1 61F96A23
+P 6250 5200
+F 0 "U6" H 6591 5246 50  0000 L CNN
+F 1 "OPA340UA" H 6591 5155 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6150 5000 50  0001 L CNN
+F 3 "http://www.ti.com/lit/ds/symlink/opa340.pdf" H 6400 5350 50  0001 C CNN
+	1    6250 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4700 5350 4700
+Wire Wire Line
+	5200 5500 5350 5500
+Wire Wire Line
+	2950 4800 3500 4800
+$Comp
+L Amplifier_Difference2:OPA196xDBV U4
+U 1 1 61FBE77F
+P 3550 5150
+F 0 "U4" H 4041 5246 50  0000 L CNN
+F 1 "OPA196xDBV" H 4041 5155 50  0000 L CNN
+F 2 "OPA196xDBVfootprint:SOT95P280X145-5N" H 3550 5150 50  0001 C CNN
+F 3 "" H 3550 5150 50  0001 C CNN
+	1    3550 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Current:INA168 U5
+U 1 1 61FC0D15
+P 5100 5100
+F 0 "U5" H 5441 5146 50  0000 L CNN
+F 1 "INA168" H 5441 5055 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5100 5100 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ina138.pdf" H 5100 5105 50  0001 C CNN
+	1    5100 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 5400 5000 5500
+Wire Wire Line
+	5000 5500 5200 5500
+Connection ~ 5200 5500
+Wire Wire Line
+	5000 4800 5000 4700
+Wire Wire Line
+	5000 4700 5200 4700
+Connection ~ 5200 4700
+Wire Wire Line
+	3500 4700 3500 4800
+Connection ~ 3500 4800
+Wire Wire Line
+	3500 5400 3500 5600
+Wire Wire Line
+	3500 5600 3300 5600
+Connection ~ 3300 5600
+Wire Wire Line
+	4000 5050 4200 5050
+Wire Wire Line
+	4300 5050 4300 4850
+Wire Wire Line
+	4300 4850 4550 4850
+Connection ~ 4550 4850
+Wire Wire Line
+	4200 4550 4200 5050
+Wire Wire Line
+	3750 4550 4200 4550
+Connection ~ 4200 5050
+Wire Wire Line
+	4200 5050 4300 5050
 $EndSCHEMATC

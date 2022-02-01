@@ -207,12 +207,12 @@ F 3 "" H 8400 2750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector:Conn_01x13_Male J?
+L Connector:Conn_01x13_Male J1
 U 1 1 61F8017B
 P 8050 2150
-F 0 "J?" H 8156 2928 50  0000 C CNN
+F 0 "J1" H 8156 2928 50  0000 C CNN
 F 1 "Conn_01x13_Male" H 8156 2837 50  0000 C CNN
-F 2 "" H 8050 2150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x13_P2.54mm_Vertical" H 8050 2150 50  0001 C CNN
 F 3 "~" H 8050 2150 50  0001 C CNN
 	1    8050 2150
 	1    0    0    -1  

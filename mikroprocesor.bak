@@ -351,7 +351,7 @@ U 1 1 61E87908
 P 4150 2650
 F 0 "L1" V 4355 2650 50  0000 C CNN
 F 1 "L_Core_Ferrite_Small" V 4264 2650 50  0000 C CNN
-F 2 "" H 4150 2650 50  0001 C CNN
+F 2 "Inductor_SMD:L_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4150 2650 50  0001 C CNN
 F 3 "~" H 4150 2650 50  0001 C CNN
 	1    4150 2650
 	0    -1   -1   0   
@@ -418,7 +418,6 @@ Wire Wire Line
 	3700 2450 3700 2600
 Connection ~ 3700 2600
 NoConn ~ 4000 3700
-NoConn ~ 4000 3900
 NoConn ~ 4000 4000
 NoConn ~ 4000 4400
 NoConn ~ 4000 4500
@@ -440,7 +439,7 @@ U 1 1 61EAC011
 P 2200 4000
 F 0 "SW1" V 2246 3952 50  0000 R CNN
 F 1 "SW_Push" V 2155 3952 50  0000 R CNN
-F 2 "" H 2200 4200 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx02_Slide_6.7x6.64mm_W8.61mm_P2.54mm_LowProfile" H 2200 4200 50  0001 C CNN
 F 3 "" H 2200 4200 50  0001 C CNN
 	1    2200 4000
 	0    -1   -1   0   
@@ -603,8 +602,6 @@ F 3 "" H 2400 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2400 4700 2300 4700
-Text GLabel 1850 4700 0    50   Input ~ 0
-ANALOG
 Text GLabel 700  5050 0    50   Input ~ 0
 SCL
 Wire Wire Line
@@ -643,8 +640,6 @@ Wire Wire Line
 Wire Wire Line
 	4800 4300 4350 4300
 Connection ~ 4350 4300
-Text GLabel 4800 4300 2    50   Input ~ 0
-DIGITAL
 Text GLabel 4300 4000 2    50   Input ~ 0
 DAC
 Wire Wire Line
@@ -776,4 +771,12 @@ Wire Wire Line
 Connection ~ 8500 2350
 Text GLabel 8500 2450 3    50   Input ~ 0
 NTC
+Wire Wire Line
+	4650 3900 4000 3900
+Text GLabel 4650 3900 2    50   Input ~ 0
+TOK_BRANJE
+Text GLabel 4800 4300 2    50   Input ~ 0
+DIGITAL_T
+Text GLabel 1850 4700 0    50   Input ~ 0
+ANALOG_T
 $EndSCHEMATC
