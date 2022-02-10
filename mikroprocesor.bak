@@ -602,13 +602,9 @@ F 3 "" H 2400 4350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2400 4700 2300 4700
-Text GLabel 700  5050 0    50   Input ~ 0
-SCL
 Wire Wire Line
 	1600 5250 1850 5250
 Connection ~ 1850 5250
-Text GLabel 1600 5250 0    50   Input ~ 0
-SDA
 Wire Wire Line
 	2400 4350 2400 4400
 Wire Wire Line
@@ -640,20 +636,10 @@ Wire Wire Line
 Wire Wire Line
 	4800 4300 4350 4300
 Connection ~ 4350 4300
-Text GLabel 4300 4000 2    50   Input ~ 0
-DAC
 Wire Wire Line
 	4300 5000 4000 5000
-Text GLabel 4300 5000 2    50   Input ~ 0
-SWDIO
 Wire Wire Line
 	4250 5100 4000 5100
-Text GLabel 4250 5100 2    50   Input ~ 0
-SWDCLK
-Text GLabel 3000 4800 0    50   Input ~ 0
-SWO
-Text GLabel 1950 3700 0    50   Input ~ 0
-NRST
 Wire Wire Line
 	700  5050 850  5050
 Wire Wire Line
@@ -677,20 +663,14 @@ Wire Wire Line
 	4000 4100 4200 4100
 Wire Wire Line
 	4300 4200 4000 4200
-Text GLabel 4300 4200 2    50   Input ~ 0
-NTC_SCLK
 Wire Wire Line
 	4300 3800 4000 3800
-Text GLabel 4300 3800 2    50   Input ~ 0
-NTC_CS
 Wire Wire Line
 	4450 4850 4150 4850
 Wire Wire Line
 	4150 4850 4150 4800
 Wire Wire Line
 	4150 4800 4000 4800
-Text GLabel 4450 4850 2    50   Input ~ 0
-NTC_SO
 $Comp
 L Amplifier_Difference2:MAX6682 U8
 U 1 1 61F21190
@@ -752,31 +732,51 @@ F 3 "" H 7550 1900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7700 2550 7700 2500
-Text GLabel 7700 2550 3    50   Input ~ 0
-NTC_CS
 Wire Wire Line
 	7350 2350 7400 2350
-Text GLabel 7350 2350 0    50   Input ~ 0
-NTC_SO
 Wire Wire Line
 	7150 2200 7250 2200
 Wire Wire Line
 	7250 2200 7250 2250
 Wire Wire Line
 	7250 2250 7400 2250
-Text GLabel 7150 2200 0    50   Input ~ 0
-NTC_SCLK
 Wire Wire Line
 	8500 2450 8500 2350
 Connection ~ 8500 2350
-Text GLabel 8500 2450 3    50   Input ~ 0
-NTC
 Wire Wire Line
 	4650 3900 4000 3900
-Text GLabel 4650 3900 2    50   Input ~ 0
-TOK_BRANJE
-Text GLabel 4800 4300 2    50   Input ~ 0
+Text HLabel 8500 2450 3    50   Input ~ 0
+NTC
+Text Label 7150 2200 2    50   ~ 0
+NTC_SCLK
+Text Label 7350 2350 2    50   ~ 0
+NTC_SO
+Text Label 7700 2550 3    50   ~ 0
+NTC_CS
+Text Label 4300 3800 0    50   ~ 0
+NTC_CS
+Text HLabel 4650 3900 2    50   Input ~ 0
+CURRENT
+Text HLabel 4300 4000 2    50   Input ~ 0
+DAC
+Text Label 4300 4200 0    50   ~ 0
+NTC_SCLK
+Text HLabel 4800 4300 2    50   Input ~ 0
 DIGITAL_T
-Text GLabel 1850 4700 0    50   Input ~ 0
+Text Label 4450 4850 0    50   ~ 0
+NTC_SO
+Text HLabel 4300 5000 2    50   Input ~ 0
+SWDIO
+Text HLabel 4250 5100 2    50   Input ~ 0
+SWDCLK
+Text HLabel 1600 5250 0    50   Input ~ 0
+SDA
+Text HLabel 700  5050 0    50   Input ~ 0
+SCL
+Text HLabel 3000 4800 0    50   Input ~ 0
+SWO
+Text HLabel 1850 4700 0    50   Input ~ 0
 ANALOG_T
+Text HLabel 1950 3700 0    50   Input ~ 0
+NRST
 $EndSCHEMATC

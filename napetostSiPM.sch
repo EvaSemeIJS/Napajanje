@@ -14,12 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Sheet
-S 2250 1500 1650 900 
-U 61E803D7
-F0 "mikroprocesor" 50
-F1 "mikroprocesor.sch" 50
-$EndSheet
 $Comp
 L power:GND #PWR02
 U 1 1 61E96DC1
@@ -106,10 +100,6 @@ Wire Wire Line
 	8800 2450 8250 2450
 Wire Wire Line
 	8800 2550 8250 2550
-Text GLabel 8800 2450 2    50   Input ~ 0
-SCL
-Text GLabel 8800 2550 2    50   Input ~ 0
-SDA
 Wire Wire Line
 	8550 2150 8250 2150
 $Comp
@@ -173,26 +163,8 @@ $EndComp
 Wire Wire Line
 	8550 3800 8550 4000
 NoConn ~ 9050 4800
-$Sheet
-S 1800 3900 2650 1050
-U 61F20E3B
-F0 "delanjeBIAS" 50
-F1 "delanjeBIAS.sch" 50
-$EndSheet
-Text GLabel 8800 1950 2    50   Input ~ 0
-BIAS
-Text GLabel 9050 4300 2    50   Input ~ 0
-NRST
-Text GLabel 9050 4500 2    50   Input ~ 0
-SWDCLK
-Text GLabel 9050 4600 2    50   Input ~ 0
-SWDIO
-Text GLabel 9050 4700 2    50   Input ~ 0
-SWO
 Wire Wire Line
 	8600 2650 8250 2650
-Text GLabel 8600 2650 2    50   Input ~ 0
-NTC
 Wire Wire Line
 	8400 2750 8250 2750
 $Comp
@@ -217,8 +189,106 @@ F 3 "~" H 8050 2150 50  0001 C CNN
 	1    8050 2150
 	1    0    0    -1  
 $EndComp
-Text GLabel 8950 2050 2    50   Input ~ 0
+Text Label 8800 1950 0    50   ~ 0
+BIAS
+Text Label 8950 2050 0    50   ~ 0
 ANALOG_T
-Text GLabel 8550 2150 2    50   Input ~ 0
+Text Label 8550 2150 0    50   ~ 0
 DIGITAL_T
+Text Label 8800 2450 0    50   ~ 0
+SCL
+Text Label 8800 2550 0    50   ~ 0
+SDA
+Text Label 8600 2650 0    50   ~ 0
+NTC
+Text Label 9050 4300 0    50   ~ 0
+NRST
+Text Label 9050 4500 0    50   ~ 0
+SWDCLK
+Text Label 9050 4600 0    50   ~ 0
+SWDIO
+Text Label 9050 4700 0    50   ~ 0
+SWO
+$Sheet
+S 1550 5750 2350 900 
+U 62053103
+F0 "microprocesor" 50
+F1 "microprocesor.sch" 50
+F2 "NTC" I R 3900 6050 50 
+F3 "CURRENT" I R 3900 6200 50 
+F4 "DAC" I R 3900 6400 50 
+F5 "DIGITAL_T" I R 3900 5800 50 
+F6 "SWDIO" I L 1550 5800 50 
+F7 "SWDCLK" I L 1550 6100 50 
+F8 "SDA" I L 1550 6350 50 
+F9 "SCL" I L 1550 6200 50 
+F10 "SWO" I L 1550 5950 50 
+F11 "ANALOG_T" I R 3900 6500 50 
+F12 "NRST" I R 3900 5900 50 
+$EndSheet
+Wire Wire Line
+	4150 5800 3900 5800
+Wire Wire Line
+	4100 5900 3900 5900
+Wire Wire Line
+	4050 6050 3900 6050
+Wire Wire Line
+	4050 6200 3900 6200
+Wire Wire Line
+	4050 6400 3900 6400
+Wire Wire Line
+	4050 6500 3900 6500
+Text Label 4150 5800 0    50   ~ 0
+DIGITAL_T
+Text Label 4100 5900 0    50   ~ 0
+NRST
+Text Label 4050 6050 0    50   ~ 0
+NTC
+Text Label 4050 6200 0    50   ~ 0
+CURRENT
+Text Label 4050 6400 0    50   ~ 0
+DAC
+Text Label 4050 6500 0    50   ~ 0
+ANALOG_T
+Wire Wire Line
+	1350 5800 1550 5800
+Wire Wire Line
+	1350 5950 1550 5950
+Wire Wire Line
+	1350 6100 1550 6100
+Wire Wire Line
+	1350 6200 1550 6200
+Wire Wire Line
+	1350 6350 1550 6350
+Text Label 1350 5800 2    50   ~ 0
+SWDIO
+Text Label 1350 5950 2    50   ~ 0
+SWO
+Text Label 1350 6100 2    50   ~ 0
+SWDCLK
+Text Label 1350 6200 2    50   ~ 0
+SCL
+Text Label 1350 6350 2    50   ~ 0
+SDA
+$Sheet
+S 1650 1750 2550 1150
+U 6205B1FA
+F0 "BIAS" 50
+F1 "BIAS.sch" 50
+F2 "CURRENT" I R 4200 2050 50 
+F3 "BIAS" I R 4200 2200 50 
+F4 "DAC" I R 4200 2350 50 
+$EndSheet
+Wire Wire Line
+	4350 2050 4200 2050
+Wire Wire Line
+	4400 2200 4200 2200
+Wire Wire Line
+	4400 2350 4200 2350
+Text Label 4350 2050 0    50   ~ 0
+CURRENT
+Text Label 4400 2200 0    50   ~ 0
+BIAS
+Text Label 4400 2350 0    50   ~ 0
+DAC
 $EndSCHEMATC
