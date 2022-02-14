@@ -22,7 +22,7 @@ AR Path="/61F2195F" Ref="U?"  Part="1"
 AR Path="/61F20E3B/61F2195F" Ref="U3"  Part="1" 
 F 0 "U3" H 3125 2465 50  0000 C CNN
 F 1 "MAX5026" H 3125 2374 50  0000 C CNN
-F 2 "MAX5026footprint:SOT95P280X145-6N" H 3150 2000 50  0001 C CNN
+F 2 "MAX5026footprint2:SOT95P280X145-6N" H 3150 2000 50  0001 C CNN
 F 3 "" H 3150 2000 50  0001 C CNN
 	1    3150 2000
 	1    0    0    -1  
@@ -52,19 +52,6 @@ F 2 "A915BY-470Mfootprint:IND_#A915BY-470M=P3" H 2600 1450 50  0001 C CNN
 F 3 "~" H 2600 1450 50  0001 C CNN
 	1    2600 1450
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:D_Schottky D?
-U 1 1 61F21974
-P 3550 1450
-AR Path="/61F21974" Ref="D?"  Part="1" 
-AR Path="/61F20E3B/61F21974" Ref="D1"  Part="1" 
-F 0 "D1" H 3550 1234 50  0000 C CNN
-F 1 "D_Schottky" H 3550 1325 50  0000 C CNN
-F 2 "diodafootprint:SOT91P240X105-3N" H 3550 1450 50  0001 C CNN
-F 3 "~" H 3550 1450 50  0001 C CNN
-	1    3550 1450
-	-1   0    0    1   
 $EndComp
 $Comp
 L Device:R R?
@@ -132,30 +119,15 @@ F 3 "~" H 4700 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2750 1450 3300 1450
-Wire Wire Line
-	3700 1450 3850 1450
+	2750 1450 3250 1450
 Wire Wire Line
 	4850 1450 5100 1450
 Wire Wire Line
 	5100 1450 5100 1700
 Wire Wire Line
 	4450 1450 4450 1750
-Connection ~ 4450 1450
 Wire Wire Line
 	4450 1450 4550 1450
-Wire Wire Line
-	3850 1700 3850 1450
-Connection ~ 3850 1450
-Wire Wire Line
-	3850 1450 4450 1450
-Wire Wire Line
-	3150 1950 3300 1950
-Wire Wire Line
-	3300 1950 3300 1450
-Connection ~ 3300 1450
-Wire Wire Line
-	3300 1450 3400 1450
 Wire Wire Line
 	3150 2200 3850 2200
 Wire Wire Line
@@ -630,25 +602,9 @@ Wire Wire Line
 Connection ~ 4550 5250
 Wire Wire Line
 	2600 5000 3100 5000
-Text GLabel 2600 5000 0    50   Input ~ 0
-DAC
-Text GLabel 7000 5500 2    50   Input ~ 0
-GNDboljse
-Text GLabel 8450 4100 0    50   Input ~ 0
-GNDboljse
 Wire Wire Line
 	7100 5200 6850 5200
 Connection ~ 6850 5200
-Text GLabel 3300 5750 3    50   Input ~ 0
-GNDboljse
-Text GLabel 4550 5700 3    50   Input ~ 0
-BIAS
-Text GLabel 5650 1450 2    50   Input ~ 0
-MAX32V
-Text GLabel 3500 4700 2    50   Input ~ 0
-MAX32V
-Text GLabel 7100 5200 2    50   Input ~ 0
-TOK_BRANJE
 $Comp
 L Amplifier_Operational:OPA340UA U6
 U 1 1 61F96A23
@@ -667,21 +623,21 @@ Wire Wire Line
 Wire Wire Line
 	2950 4800 3500 4800
 $Comp
-L Amplifier_Difference2:OPA196xDBV U?
+L Amplifier_Difference2:OPA196xDBV U4
 U 1 1 61FBE77F
 P 3550 5150
-F 0 "U?" H 4041 5246 50  0000 L CNN
+F 0 "U4" H 4041 5246 50  0000 L CNN
 F 1 "OPA196xDBV" H 4041 5155 50  0000 L CNN
-F 2 "" H 3550 5150 50  0001 C CNN
+F 2 "OPA196xDBVfootprint:SOT95P280X145-5N" H 3550 5150 50  0001 C CNN
 F 3 "" H 3550 5150 50  0001 C CNN
 	1    3550 5150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Current:INA168 U?
+L Amplifier_Current:INA168 U5
 U 1 1 61FC0D15
 P 5100 5100
-F 0 "U?" H 5441 5146 50  0000 L CNN
+F 0 "U5" H 5441 5146 50  0000 L CNN
 F 1 "INA168" H 5441 5055 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5100 5100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina138.pdf" H 5100 5105 50  0001 C CNN
@@ -720,4 +676,51 @@ Wire Wire Line
 Connection ~ 4200 5050
 Wire Wire Line
 	4200 5050 4300 5050
+$Comp
+L Diode:ZHCS500 U9
+U 1 1 61FC439E
+P 3600 1450
+F 0 "U9" H 3600 1725 50  0000 C CNN
+F 1 "ZHCS500" H 3600 1634 50  0000 C CNN
+F 2 "diodafootprint:SOT91P240X105-3N" H 3600 1450 50  0001 C CNN
+F 3 "" H 3600 1450 50  0001 C CNN
+	1    3600 1450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3300 1400
+Wire Wire Line
+	3150 1950 3250 1950
+Wire Wire Line
+	3250 1950 3250 1450
+Connection ~ 3250 1450
+Wire Wire Line
+	3250 1450 3300 1450
+Wire Wire Line
+	3900 1400 3950 1400
+Wire Wire Line
+	4450 1400 4450 1450
+Connection ~ 4450 1450
+Wire Wire Line
+	3950 1400 3950 1700
+Wire Wire Line
+	3950 1700 3850 1700
+Connection ~ 3950 1400
+Wire Wire Line
+	3950 1400 4450 1400
+Text Label 5650 1450 0    50   ~ 0
+MAX32V
+Text Label 3500 4700 0    50   ~ 0
+MAX32V
+Text Label 3300 5750 0    50   ~ 0
+GNDbetter
+Text Label 7000 5500 0    50   ~ 0
+GNDbetter
+Text Label 8450 4100 2    50   ~ 0
+GNDbetter
+Text HLabel 7100 5200 2    50   Input ~ 0
+CURRENT
+Text HLabel 4550 5700 2    50   Input ~ 0
+BIAS
+Text HLabel 2600 5000 0    50   Input ~ 0
+DAC
 $EndSCHEMATC
