@@ -14,56 +14,12 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L power:GND #PWR02
-U 1 1 61E96DC1
-P 8450 1550
-F 0 "#PWR02" H 8450 1300 50  0001 C CNN
-F 1 "GND" V 8455 1422 50  0000 R CNN
-F 2 "" H 8450 1550 50  0001 C CNN
-F 3 "" H 8450 1550 50  0001 C CNN
-	1    8450 1550
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8250 1550 8450 1550
-$Comp
-L power:GND #PWR09
-U 1 1 61E9BAA5
-P 8650 1650
-F 0 "#PWR09" H 8650 1400 50  0001 C CNN
-F 1 "GND" V 8655 1522 50  0000 R CNN
-F 2 "" H 8650 1650 50  0001 C CNN
-F 3 "" H 8650 1650 50  0001 C CNN
-	1    8650 1650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8250 1650 8650 1650
-$Comp
-L power:+5V #PWR05
-U 1 1 61EA08F2
-P 8550 1750
-F 0 "#PWR05" H 8550 1600 50  0001 C CNN
-F 1 "+5V" V 8565 1878 50  0000 L CNN
-F 2 "" H 8550 1750 50  0001 C CNN
-F 3 "" H 8550 1750 50  0001 C CNN
-	1    8550 1750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8250 1750 8550 1750
-$Comp
-L power:GND #PWR03
-U 1 1 61EAA705
-P 8450 1850
-F 0 "#PWR03" H 8450 1600 50  0001 C CNN
-F 1 "GND" V 8455 1722 50  0000 R CNN
-F 2 "" H 8450 1850 50  0001 C CNN
-F 3 "" H 8450 1850 50  0001 C CNN
-	1    8450 1850
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8250 1850 8450 1850
 Wire Wire Line
@@ -72,30 +28,8 @@ Wire Wire Line
 	8950 2050 8250 2050
 Wire Wire Line
 	8550 2250 8250 2250
-$Comp
-L power:+3.3V #PWR06
-U 1 1 61EC92B3
-P 8550 2250
-F 0 "#PWR06" H 8550 2100 50  0001 C CNN
-F 1 "+3.3V" V 8565 2378 50  0000 L CNN
-F 2 "" H 8550 2250 50  0001 C CNN
-F 3 "" H 8550 2250 50  0001 C CNN
-	1    8550 2250
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	8350 2350 8250 2350
-$Comp
-L power:GND #PWR01
-U 1 1 61ED4863
-P 8350 2350
-F 0 "#PWR01" H 8350 2100 50  0001 C CNN
-F 1 "GND" V 8355 2222 50  0000 R CNN
-F 2 "" H 8350 2350 50  0001 C CNN
-F 3 "" H 8350 2350 50  0001 C CNN
-	1    8350 2350
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	8800 2450 8250 2450
 Wire Wire Line
@@ -115,51 +49,12 @@ F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.faqs/attached/13634/cortex
 	1    8550 4600
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61F1BCDB
-P 8450 5300
-AR Path="/61E803D7/61F1BCDB" Ref="#PWR?"  Part="1" 
-AR Path="/61F1BCDB" Ref="#PWR04"  Part="1" 
-F 0 "#PWR04" H 8450 5050 50  0001 C CNN
-F 1 "GND" H 8455 5127 50  0000 C CNN
-F 2 "" H 8450 5300 50  0001 C CNN
-F 3 "" H 8450 5300 50  0001 C CNN
-	1    8450 5300
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 61F1BCE1
-P 8600 5300
-AR Path="/61E803D7/61F1BCE1" Ref="#PWR?"  Part="1" 
-AR Path="/61F1BCE1" Ref="#PWR08"  Part="1" 
-F 0 "#PWR08" H 8600 5050 50  0001 C CNN
-F 1 "GND" H 8605 5127 50  0000 C CNN
-F 2 "" H 8600 5300 50  0001 C CNN
-F 3 "" H 8600 5300 50  0001 C CNN
-	1    8600 5300
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8550 5200 8600 5200
 Wire Wire Line
 	8600 5200 8600 5300
 Wire Wire Line
 	8450 5200 8450 5300
-$Comp
-L power:+3.3V #PWR?
-U 1 1 61F1BCEA
-P 8550 3800
-AR Path="/61E803D7/61F1BCEA" Ref="#PWR?"  Part="1" 
-AR Path="/61F1BCEA" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 8550 3650 50  0001 C CNN
-F 1 "+3.3V" H 8565 3973 50  0000 C CNN
-F 2 "" H 8550 3800 50  0001 C CNN
-F 3 "" H 8550 3800 50  0001 C CNN
-	1    8550 3800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	8550 3800 8550 4000
 NoConn ~ 9050 4800
@@ -167,17 +62,6 @@ Wire Wire Line
 	8600 2650 8250 2650
 Wire Wire Line
 	8400 2750 8250 2750
-$Comp
-L power:GND #PWR0103
-U 1 1 61EFC12A
-P 8400 2750
-F 0 "#PWR0103" H 8400 2500 50  0001 C CNN
-F 1 "GND" V 8405 2622 50  0000 R CNN
-F 2 "" H 8400 2750 50  0001 C CNN
-F 3 "" H 8400 2750 50  0001 C CNN
-	1    8400 2750
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Connector:Conn_01x13_Male J1
 U 1 1 61F8017B
@@ -225,6 +109,8 @@ F9 "SCL" I L 1550 6200 50
 F10 "SWO" I L 1550 5950 50 
 F11 "ANALOG_T" I R 3900 6500 50 
 F12 "NRST" I R 3900 5900 50 
+F13 "GND" I L 1550 6500 50 
+F14 "+3.3V" I R 3900 6600 50 
 $EndSheet
 Wire Wire Line
 	4150 5800 3900 5800
@@ -278,6 +164,8 @@ F1 "BIAS.sch" 50
 F2 "CURRENT" I R 4200 2050 50 
 F3 "BIAS" I R 4200 2200 50 
 F4 "DAC" I R 4200 2350 50 
+F5 "GND" I R 4200 2550 50 
+F6 "+5V" I R 4200 2700 50 
 $EndSheet
 Wire Wire Line
 	4350 2050 4200 2050
@@ -291,4 +179,40 @@ Text Label 4400 2200 0    50   ~ 0
 BIAS
 Text Label 4400 2350 0    50   ~ 0
 DAC
+Wire Wire Line
+	4450 2550 4200 2550
+Wire Wire Line
+	4450 2700 4200 2700
+Text Label 4450 2550 0    50   ~ 0
+GND
+Text Label 4450 2700 0    50   ~ 0
++5V
+Wire Wire Line
+	4100 6600 3900 6600
+Wire Wire Line
+	1350 6500 1550 6500
+Text Label 4100 6600 0    50   ~ 0
++3.3V
+Text Label 1350 6500 2    50   ~ 0
+GND
+Text Label 8400 2750 0    50   ~ 0
+GND
+Text Label 8350 2350 0    50   ~ 0
+GND
+Text Label 8550 2250 0    50   ~ 0
++3.3V
+Text Label 8450 1550 0    50   ~ 0
+GND
+Text Label 8650 1650 0    50   ~ 0
+GND
+Text Label 8550 1750 0    50   ~ 0
++5V
+Text Label 8450 1850 0    50   ~ 0
+GND
+Text Label 8600 5300 3    50   ~ 0
+GND
+Text Label 8450 5300 3    50   ~ 0
+GND
+Text Label 8550 3800 1    50   ~ 0
++3.3V
 $EndSCHEMATC
