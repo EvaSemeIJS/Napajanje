@@ -2,4 +2,5 @@
   (lib (name Amplifier_Difference)(type Legacy)(uri ${KIPRJMOD}/Amplifier_Difference.lib)(options "")(descr ""))
   (lib (name Amplifier_Difference2)(type Legacy)(uri "C:/Users/evase/Documents/Eva/KiCad/knjižnice in footprinti/OPA196xDBV/Amplifier_Difference2.lib")(options "")(descr ""))
   (lib (name Diode)(type Legacy)(uri ${KIPRJMOD}/Diode.lib)(options "")(descr ""))
+  (lib (name Amplifier_Current)(type Legacy)(uri "C:/Users/evase/Documents/Eva/KiCad/knjižnice in footprinti/INA168-8/Amplifier_Current.lib")(options "")(descr ""))
 )

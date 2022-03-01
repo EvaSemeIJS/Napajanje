@@ -64,7 +64,7 @@ AR Path="/6205B587" Ref="R?"  Part="1"
 AR Path="/61F20E3B/6205B587" Ref="R?"  Part="1" 
 AR Path="/6205B1FA/6205B587" Ref="R10"  Part="1" 
 F 0 "R10" H 3970 1896 50  0000 L CNN
-F 1 "1156 kΩ" H 3970 1805 50  0000 L CNN
+F 1 "1.2 MΩ" H 3970 1805 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 3830 1850 50  0001 C CNN
 F 3 "~" H 3900 1850 50  0001 C CNN
 	1    3900 1850
@@ -256,23 +256,13 @@ P 4600 5100
 AR Path="/6205B5F9" Ref="R?"  Part="1" 
 AR Path="/61F20E3B/6205B5F9" Ref="R?"  Part="1" 
 AR Path="/6205B1FA/6205B5F9" Ref="R12"  Part="1" 
-F 0 "R12" H 4670 5146 50  0000 L CNN
-F 1 "5 Ω" H 4670 5055 50  0000 L CNN
+F 0 "R12" H 4400 5150 50  0000 L CNN
+F 1 "4.7 Ω" H 4350 5050 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4530 5100 50  0001 C CNN
 F 3 "~" H 4600 5100 50  0001 C CNN
 	1    4600 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4600 4950 4600 4850
-Wire Wire Line
-	4600 4850 4850 4850
-Wire Wire Line
-	4850 4850 4850 5000
-Wire Wire Line
-	4600 5250 4850 5250
-Wire Wire Line
-	4850 5250 4850 5200
 $Comp
 L Device:R R?
 U 1 1 6205B605
@@ -281,7 +271,7 @@ AR Path="/6205B605" Ref="R?"  Part="1"
 AR Path="/61F20E3B/6205B605" Ref="R?"  Part="1" 
 AR Path="/6205B1FA/6205B605" Ref="R14"  Part="1" 
 F 0 "R14" H 5720 5296 50  0000 L CNN
-F 1 "500 kΩ" H 5720 5205 50  0000 L CNN
+F 1 "470 kΩ" H 5720 5205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 5580 5250 50  0001 C CNN
 F 3 "~" H 5650 5250 50  0001 C CNN
 	1    5650 5250
@@ -298,75 +288,6 @@ Wire Wire Line
 	6000 5650 6900 5650
 Wire Wire Line
 	6900 5650 6900 5200
-$Comp
-L Amplifier_Difference:LM7705 U?
-U 1 1 6205B630
-P 9250 4250
-AR Path="/6205B630" Ref="U?"  Part="1" 
-AR Path="/61F20E3B/6205B630" Ref="U?"  Part="1" 
-AR Path="/6205B1FA/6205B630" Ref="U7"  Part="1" 
-F 0 "U7" H 8800 4150 50  0000 R CNN
-F 1 "LM7705" H 8800 4050 50  0000 R CNN
-F 2 "LM7705footprint:SOP65P490X110-8N" H 9250 4250 50  0001 C CNN
-F 3 "" H 9250 4250 50  0001 C CNN
-	1    9250 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8500 4100 8650 4100
-$Comp
-L Device:C C?
-U 1 1 6205B638
-P 9150 3700
-AR Path="/6205B638" Ref="C?"  Part="1" 
-AR Path="/61F20E3B/6205B638" Ref="C?"  Part="1" 
-AR Path="/6205B1FA/6205B638" Ref="C20"  Part="1" 
-F 0 "C20" V 8898 3700 50  0000 C CNN
-F 1 "5 μF" V 8989 3700 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9188 3550 50  0001 C CNN
-F 3 "~" H 9150 3700 50  0001 C CNN
-	1    9150 3700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9300 3700 9300 3900
-Wire Wire Line
-	9000 3700 8950 3700
-Wire Wire Line
-	8950 3700 8950 3900
-Wire Wire Line
-	8950 3900 9100 3900
-$Comp
-L Device:C C?
-U 1 1 6205B643
-P 9900 4300
-AR Path="/6205B643" Ref="C?"  Part="1" 
-AR Path="/61F20E3B/6205B643" Ref="C?"  Part="1" 
-AR Path="/6205B1FA/6205B643" Ref="C21"  Part="1" 
-F 0 "C21" V 9648 4300 50  0000 C CNN
-F 1 "22 μF" V 9739 4300 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9938 4150 50  0001 C CNN
-F 3 "~" H 9900 4300 50  0001 C CNN
-	1    9900 4300
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9600 4300 9750 4300
-Wire Wire Line
-	9600 4100 9600 3950
-Wire Wire Line
-	2750 4550 2850 4550
-Wire Wire Line
-	2850 4550 2850 5200
-Wire Wire Line
-	2850 5200 3150 5200
-Connection ~ 2850 4550
-Wire Wire Line
-	2850 4550 3050 4550
-Wire Wire Line
-	9600 3950 10050 3950
-Wire Wire Line
-	10050 3950 10050 4300
 $Comp
 L Device:C C?
 U 1 1 6205B66C
@@ -437,32 +358,8 @@ Wire Wire Line
 Wire Wire Line
 	7050 5500 6700 5500
 Connection ~ 6700 5500
-$Comp
-L Device:C C?
-U 1 1 6205B691
-P 8650 3900
-AR Path="/6205B691" Ref="C?"  Part="1" 
-AR Path="/61F20E3B/6205B691" Ref="C?"  Part="1" 
-AR Path="/6205B1FA/6205B691" Ref="C19"  Part="1" 
-F 0 "C19" H 8765 3946 50  0000 L CNN
-F 1 "22 μF" H 8765 3855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8688 3750 50  0001 C CNN
-F 3 "~" H 8650 3900 50  0001 C CNN
-	1    8650 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	8650 4050 8650 4100
-Connection ~ 8650 4100
-Wire Wire Line
-	8650 4100 8750 4100
-Wire Wire Line
-	8650 3700 8650 3750
-Wire Wire Line
-	4600 5700 4600 5250
-Connection ~ 4600 5250
-Wire Wire Line
-	2650 5000 3150 5000
+	2650 4950 3150 4950
 Wire Wire Line
 	7150 5200 6900 5200
 Connection ~ 6900 5200
@@ -487,7 +384,7 @@ AR Path="/61F20E3B/6205B6B1" Ref="U?"  Part="1"
 AR Path="/6205B1FA/6205B6B1" Ref="U4"  Part="1" 
 F 0 "U4" H 4000 5050 50  0000 L CNN
 F 1 "OPA196xDBV" H 3800 4950 50  0000 L CNN
-F 2 "OPA196xDBVfootprint:SOT95P280X145-5N" H 3600 5150 50  0001 C CNN
+F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 3600 5150 50  0001 C CNN
 F 3 "" H 3600 5150 50  0001 C CNN
 	1    3600 5150
 	1    0    0    -1  
@@ -500,24 +397,15 @@ AR Path="/61F20E3B/6205B6B8" Ref="U?"  Part="1"
 AR Path="/6205B1FA/6205B6B8" Ref="U5"  Part="1" 
 F 0 "U5" H 5150 5350 50  0000 L CNN
 F 1 "INA168" H 5100 5250 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 5150 5100 50  0001 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 5150 5100 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/ina138.pdf" H 5150 5105 50  0001 C CNN
 	1    5150 5100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 5400 5050 5500
-Wire Wire Line
-	5050 4800 5050 4700
-Wire Wire Line
 	3500 4650 3500 4750
 Wire Wire Line
 	4050 5050 4250 5050
-Wire Wire Line
-	4350 5050 4350 4850
-Wire Wire Line
-	4350 4850 4600 4850
-Connection ~ 4600 4850
 Wire Wire Line
 	4250 4550 4250 5050
 Wire Wire Line
@@ -533,7 +421,7 @@ AR Path="/61F20E3B/6205B6D2" Ref="U?"  Part="1"
 AR Path="/6205B1FA/6205B6D2" Ref="U9"  Part="1" 
 F 0 "U9" H 3650 1725 50  0000 C CNN
 F 1 "ZHCS500" H 3650 1634 50  0000 C CNN
-F 2 "diodafootprint:SOT91P240X105-3N" H 3650 1450 50  0001 C CNN
+F 2 "diodafootprint:SOT-23-dioda" H 3650 1450 50  0001 C CNN
 F 3 "" H 3650 1450 50  0001 C CNN
 	1    3650 1450
 	1    0    0    -1  
@@ -564,16 +452,10 @@ Text Label 3500 4650 0    50   ~ 0
 MAX32V
 Text HLabel 7150 5200 2    50   Input ~ 0
 CURRENT
-Text HLabel 4600 5700 2    50   Input ~ 0
+Text HLabel 4600 4750 2    50   Input ~ 0
 BIAS
-Text HLabel 2650 5000 0    50   Input ~ 0
+Text HLabel 2650 4950 0    50   Input ~ 0
 DAC
-Text Label 3350 5750 0    50   ~ 0
-GNDlower
-Text Label 7050 5500 0    50   ~ 0
-GNDlower
-Text Label 8500 4100 2    50   ~ 0
-GNDlower
 $Comp
 L Device:C C23
 U 1 1 620E64F6
@@ -592,15 +474,6 @@ Wire Wire Line
 	5800 5100 6000 5100
 Wire Wire Line
 	5800 4700 5800 4750
-Text HLabel 9300 4650 3    50   Input ~ 0
-GND
-Text HLabel 9100 4650 3    50   Input ~ 0
-GND
-Wire Wire Line
-	10050 4400 10050 4300
-Connection ~ 10050 4300
-Text HLabel 10050 4400 3    50   Input ~ 0
-GND
 Wire Wire Line
 	2800 2750 2800 2600
 Text HLabel 2800 2750 3    50   Input ~ 0
@@ -611,15 +484,10 @@ Wire Wire Line
 	2350 4600 2350 4550
 Text HLabel 2350 4600 3    50   Input ~ 0
 GND
-Text HLabel 8650 3700 1    50   Input ~ 0
-GND
 Text HLabel 5800 4700 1    50   Input ~ 0
 GND
 Wire Wire Line
 	5250 5600 5250 5500
-Wire Wire Line
-	5050 5500 5250 5500
-Connection ~ 5250 5500
 Wire Wire Line
 	5250 5500 5400 5500
 Text HLabel 5250 5600 3    50   Input ~ 0
@@ -635,14 +503,6 @@ Wire Wire Line
 Connection ~ 5200 4700
 Wire Wire Line
 	5200 4700 5400 4700
-Text HLabel 5200 4600 1    50   Input ~ 0
-+5V
-Text HLabel 6200 4800 1    50   Input ~ 0
-+5V
-Text Notes 7800 4200 0    50   ~ 0
-(generated -0.23V)
-Text HLabel 9600 4450 2    50   Input ~ 0
-+5V
 Wire Wire Line
 	3300 5450 3300 5550
 Wire Wire Line
@@ -657,4 +517,50 @@ Wire Wire Line
 Wire Wire Line
 	3500 4750 3300 4750
 Connection ~ 3300 4750
+Text HLabel 7050 5500 2    50   Input ~ 0
+GND
+Text HLabel 3350 5750 2    50   Input ~ 0
+GND
+Text HLabel 5200 4600 1    50   Input ~ 0
++3.3V
+Text HLabel 6200 4800 1    50   Input ~ 0
++3.3V
+Wire Wire Line
+	5050 4700 5050 4850
+Wire Wire Line
+	5150 5300 5150 5500
+Wire Wire Line
+	5150 5500 5250 5500
+Connection ~ 5250 5500
+Wire Wire Line
+	4350 5050 4350 5250
+Wire Wire Line
+	4350 5250 4600 5250
+Wire Wire Line
+	4600 4750 4600 4950
+Wire Wire Line
+	4850 4950 4600 4950
+Connection ~ 4600 4950
+Wire Wire Line
+	4850 5100 4750 5100
+Wire Wire Line
+	4750 5100 4750 5250
+Wire Wire Line
+	4750 5250 4600 5250
+Connection ~ 4600 5250
+NoConn ~ 4850 5150
+NoConn ~ 4850 5200
+NoConn ~ 4850 5250
+Wire Wire Line
+	2750 4550 2850 4550
+Wire Wire Line
+	3150 5050 2850 5050
+Wire Wire Line
+	2850 5050 2850 4550
+Connection ~ 2850 4550
+Wire Wire Line
+	2850 4550 3050 4550
+NoConn ~ 3150 5100
+NoConn ~ 3150 5200
+NoConn ~ 3150 5300
 $EndSCHEMATC
